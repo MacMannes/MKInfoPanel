@@ -27,18 +27,6 @@ typedef enum {
 
 @interface MKInfoPanel : UIView {
     
-    UILabel *_titleLabel;
-    UILabel *_detailLabel;
-    
-    UIImageView *_thumbImage;
-    UIImageView *_backgroundGradient;
-    
-    SEL _onTouched;
-    
-    id _delegate;
-    SEL _onFinished;
-    
-    MKInfoPanelType type_;
 }
 
 @property (nonatomic, assign) IBOutlet UILabel *titleLabel;

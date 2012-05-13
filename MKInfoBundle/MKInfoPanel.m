@@ -67,9 +67,7 @@
 }
 
 - (void)dealloc {
-    [_delegate performSelector:_onFinished];
-    
-    [super dealloc];
+//    [self.delegate performSelector:_onFinished];    
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -170,7 +168,7 @@
 ////////////////////////////////////////////////////////////////////////
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self performSelector:_onTouched];
+//    [self performSelector:_onTouched];
 }
 
 ////////////////////////////////////////////////////////////////////////
